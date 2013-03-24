@@ -2,7 +2,7 @@
   "name": "jszip",
   "repo": "virtru/jszip",
   "description": "A zip library for javascript",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "development": {},
   "license": "MIT/GPL3",
   "scripts": [

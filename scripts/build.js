@@ -14,13 +14,15 @@ files.forEach(function(file) {
   var filePath = path.resolve(__dirname, '../src', file);
   filePaths.push(filePath);
 });
-var uglifyCommand = 'uglifyjs --beautify ';
+var uglifyCommand = 'uglifyjs ';
 uglifyCommand += filePaths.join(' ');
+uglifyCommand += ' --beautify';
 
 console.log("Building JSZip for component: %s", uglifyCommand);
 console.log("Uglifying the JSZip files together");
 exec(uglifyCommand, function(err, stdout, stderr) {
   console.log("Adding the export line for component");
+
   var output = stdout;
   output += WRAPPING_EXPORT;
 

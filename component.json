@@ -6,7 +6,6 @@
   "development": {},
   "license": "MIT/GPL3",
   "scripts": [
-    "index.js",
-    "zip.js"
+    "index.js"
   ]
 }
